@@ -5,7 +5,7 @@ const importAll = (r) => {
   let images = r.keys().map((item, index) => {
     return {
       src: r(item),
-      thumbnail: r(item.replace('../', '../thumb.')),
+      thumbnail: r(item.replace('../', '../thumbs/thumb.')),
       thumbnailWidth: 200,
       thumbnailHeight: 150
     }
