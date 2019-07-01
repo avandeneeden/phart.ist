@@ -8,7 +8,7 @@ import logo from './images/logo.png';
 
 import Home from './pages/Home.js';
 import Contact from './pages/Contact.js';
-import Gallery from './pages/Gallery.js';
+import PhotoGallery from './pages/PhotoGallery.js';
 
 
 export const menuItems = [
@@ -20,7 +20,7 @@ export const menuItems = [
   {
     name: 'Gallery',
     path: '/gallery',
-    component: Gallery
+    component: PhotoGallery
   },
   {
     name: 'Contact',
