@@ -9,14 +9,14 @@ export default class Contact extends React.Component {
         <h1>Contact her</h1>
 
         <div>
-          <Form name="contact"  method="POST" data-netlify="true">
+          <Form name="contact"  method="POST">
             <Form.Group controlId="contactForm.Email">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
+              <Form.Control name="email" type="email" placeholder="name@example.com" />
             </Form.Group>
             <Form.Group controlId="contactForm.Happy">
               <Form.Label>Are you happy?</Form.Label>
-              <Form.Control as="select">
+              <Form.Control name="happy" as="select">
                 <option>Yes</option>
                 <option>No</option>
                 <option>What is</option>
@@ -24,7 +24,7 @@ export default class Contact extends React.Component {
             </Form.Group>
             <Form.Group controlId="contactForm.Message">
               <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows="3" />
+              <Form.Control name="message" as="textarea" rows="3" />
             </Form.Group>
 
             <Button variant="primary" type="submit">
