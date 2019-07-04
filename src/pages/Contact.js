@@ -9,7 +9,7 @@ export default class Contact extends React.Component {
         <h1>Contact her</h1>
 
         <div>
-          <Form name="contact"  method="POST">
+          <Form name="contact">
             <Form.Group controlId="contactForm.Email">
               <Form.Label>Email address</Form.Label>
               <Form.Control name="email" type="email" placeholder="name@example.com" />
