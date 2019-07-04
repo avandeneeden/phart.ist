@@ -7,7 +7,13 @@ export default class Contact extends React.Component {
     return (
       <div>
         <h1>Contact her</h1>
+        <br/>
+        <br/>
 
+        <h3>
+          Email AngelaVanDenEeden at gmail dot com
+        </h3>
+        {/*
         <div>
           <Form name="contact">
             <Form.Group controlId="contactForm.Email">
@@ -32,6 +38,7 @@ export default class Contact extends React.Component {
             </Button>
           </Form>
         </div>
+      */}
       </div>
     )
   }
