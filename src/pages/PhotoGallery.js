@@ -1,11 +1,14 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
 
-const importAll = (r) => {
-  let images = r.keys().map((item, index) => {
+const importAll = (gallery, thumbs) => {
+  let images = gallery.keys().map((item, index) => {
+    // console.log('item: ',item)
+    const thumbnail = item.replace('./', './thumb.');
+    // console.log('thumbnail: ',thumbnail)
     return {
-      src: r(item),
-      thumbnail: r(item.replace('../', '../thumbs/thumb.')),
+      src: gallery(item),
+      thumbnail: thumbs(thumbnail),
       thumbnailWidth: 200,
       thumbnailHeight: 150
     }
@@ -13,7 +16,7 @@ const importAll = (r) => {
   return images;
 }
 
-const IMAGES = importAll(require.context('../gallery', false, /\.(jpe?g)$/));
+const IMAGES = importAll(require.context('../gallery', false, /\.(jpe?g)$/), require.context('../gallery/thumbs', false, /\.(jpe?g)$/));
 
 // const IMAGES =
 // [{
