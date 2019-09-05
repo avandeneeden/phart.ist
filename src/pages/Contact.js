@@ -13,7 +13,8 @@ export default class Contact extends React.Component {
 
 
         <div>
-          <Form name="contact" method="POST" data-netlify="true">
+          <Form name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact" />
             <Form.Group controlId="contactForm.Email">
               <Form.Label>Email address</Form.Label>
               <Form.Control name="email" type="email" placeholder="name@example.com" />
