@@ -10,12 +10,10 @@ export default class Contact extends React.Component {
         <br/>
         <br/>
 
-        <h3>
-          Email AngelaVanDenEeden at gmail dot com
-        </h3>
-        {/*
+
+
         <div>
-          <Form name="contact">
+          <Form name="contact" method="POST" data-netlify="true">
             <Form.Group controlId="contactForm.Email">
               <Form.Label>Email address</Form.Label>
               <Form.Control name="email" type="email" placeholder="name@example.com" />
@@ -38,7 +36,7 @@ export default class Contact extends React.Component {
             </Button>
           </Form>
         </div>
-      */}
+
       </div>
     )
   }
